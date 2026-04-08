@@ -1,0 +1,37 @@
+apiVersion: score.dev/v1b1
+
+metadata:
+  name: react-demo-3
+
+containers:
+  app:
+    image: .
+    resources:
+      requests:
+        cpu: 50m
+        memory: 32Mi
+      limits:
+        cpu: 100m
+        memory: 64Mi
+    livenessProbe:
+      httpGet:
+        path: /react-demo-3/
+        port: 80
+    readinessProbe:
+      httpGet:
+        path: /react-demo-3/
+        port: 80
+
+service:
+  ports:
+    www:
+      port: 80
+      targetPort: 80
+
+
+resources:
+  route:
+    type: route
+    params:
+      path: /react-demo-3
+      port: 80

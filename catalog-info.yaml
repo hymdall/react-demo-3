@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: react-demo-3
+  description: react-demo-3
+  annotations:
+    github.com/project-slug: hymdall/react-demo-3
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - url: http://10.20.202.118:30080/react-demo-3
+      title: Deployment
+      icon: dashboard
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/engineering
