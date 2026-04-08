@@ -80,7 +80,7 @@ function App() {
     <div className="page">
       <header className="hero">
         <div className="hero-badge">Hands-on Assignment</div>
-        <h1 className="hero-title">Make it <span>yours</span></h1>
+        <h1 className="hero-title">Hello <span>dhananjay</span></h1>
         <p className="hero-sub">
           Follow the 5 steps below to personalize this app and ship your first change through the full CI/CD pipeline.
         </p>
@@ -94,9 +94,9 @@ function App() {
         <h2>Your Bio Card (Step 3 result)</h2>
         <p className="section-sub">Update the props in App.jsx — this card will reflect your changes.</p>
         <BioCard
-          name="Your Name"
-          role="Your Role"
-          fun="One fun fact about you"
+          name="Dhananjay"
+          role="backend developer"
+          fun="i like icecream"
         />
       </section>
 
